@@ -13,7 +13,7 @@ require_once realpath(dirname(__FILE__) . "/../config/config.php");
         <label class="form_label" for="modelo_carro">Modelo</label>
         <input class="form-control" type="text" name="modelo_carro" maxlength="10" id="modelo_carro">
     </div>
-    <div class="mb-3">        
+    <div class="mb-3">
         <label class="form_label" for="placa_carro">Placa</label>
         <input class="form-control" type="text" name="placa_carro" maxlength="7" id="placa_carro">
     </div>

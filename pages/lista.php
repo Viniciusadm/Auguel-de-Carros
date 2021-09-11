@@ -26,7 +26,7 @@ $carros = $lista->listar();
                     <td><?= $carro["modelo"] ?></td>
                     <td><?= $carro["placa"] ?></td>
                     <td class="labelAlugado"><?= $carro["alugado"] === "1" ? "Disponível" : "Alugado" ?></td>
-                    <td><a href="controllers/_aluguel.php?id=<?= $carro["id"] . "&estado=" . $carro["alugado"] ?>" id="buttonAluguel" class="btn btn-<?= $carro["alugado"] === "1" ? "primary" : "success" ?>"><?= $carro["alugado"] === "1" ? "Alugar" : "Devolver" ?></a></td>
+                    <td><a href="controllers/_aluguel.php?id=<?= $carro["id"] . "&estado=" . $carro["alugado"] ?>&pagina=lista" id="buttonAluguel" class="btn btn-<?= $carro["alugado"] === "1" ? "primary" : "success" ?>"><?= $carro["alugado"] === "1" ? "Alugar" : "Devolver" ?></a></td>
                     <td>
                         <a href="editar.php?id=<?= $carro["id"] ?>" id="alterar<?= $carro["id"] ?>" class="btn btn-warning">Alterar</a>
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalExcluir<?= $carro['id'] ?>">

@@ -7,4 +7,6 @@ if (isset($_GET["id"]) && !empty($_GET["id"])) {
     $carro = new Carro();
     $carro->deletar($id);
     header("Location: ../lista.php");
+} else {
+    header("Location: ../lista.php");
 }

@@ -30,6 +30,20 @@ class Carro {
         }
     }
 
+    public function listarAlugados() {
+        global $pdo;
+        $sql = "SELECT * FROM carros WHERE alugado = '2'";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        if ($stmt->rowCount() > 0) {
+            $dados = $stmt->fetchAll();
+            return $dados;
+        } elseif ($stmt->rowCount <= 0) {
+            return "Nenhum veículo cadastrado";
+        }
+    }
+
     public function selecionar($id) {
         global $pdo;
         $sql = "SELECT * FROM carros WHERE id = :id";

@@ -10,4 +10,6 @@ if (isset($_POST["marca_carro"]) && !empty($_POST["marca_carro"]) && isset($_POS
     $carro = new Carro();
     $carro->criar($marca, $modelo, $placa);
     header("Location: ../lista.php");
+} else {
+    header("Location: ../lista.php");
 }

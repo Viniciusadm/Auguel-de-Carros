@@ -5,8 +5,16 @@ if (isset($_GET["id"]) && !empty($_GET["id"]) && isset($_GET["estado"]) && !empt
 
     $id = $_GET['id'];
     $estado = $_GET['estado'];
+    $pagina = $_GET['pagina'];
     $estado = $estado === "1" ? "2" : "1";
     $carro = new Carro();
-    $carro->trocarEstado($id, $estado);
-    header("Location: ../lista.php");
+    if ($estado === 2) {
+        $cliente = $_POST['cliente'];
+        $carro->trocarEstado($id, $estado, $cliente);
+    } else {
+        $carro->trocarEstado($id, $estado);
+    }
+    header("Location: ../$pagina.php");
+} else {
+    header("Location: ../$pagina.php");
 }

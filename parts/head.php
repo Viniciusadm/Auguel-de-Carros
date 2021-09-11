@@ -24,10 +24,10 @@
 					<a class="nav-link" href="/pages/lista.php">Lista de Veículos</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/pages/novo.php">Novo Veículo</a>
+					<a class="nav-link" href="/pages/listaAlugados.php">Lista de Alugados</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/pages/clientes.php">Clientes</a>
+					<a class="nav-link" href="/pages/novo.php">Novo Veículo</a>
 				</li>
 			</ul>
 			<div class="d-flex me-2">
