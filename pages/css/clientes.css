@@ -1,0 +1,11 @@
+th {
+    user-select: none;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.escondido {
+    display: none;
+}

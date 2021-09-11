@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#corpo {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.group input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.group label {
+    font-size: 1.4rem;
+    user-select: none;
+}

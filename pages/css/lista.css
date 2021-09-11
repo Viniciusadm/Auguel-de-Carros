@@ -1,0 +1,16 @@
+#buttonAluguel {
+    width: 6rem;
+}
+
+.labelAlugado {
+    width: 6.5rem;
+    user-select: none;
+}
+
+th {
+    user-select: none;
+}
+
+td {
+    vertical-align: middle;
+}

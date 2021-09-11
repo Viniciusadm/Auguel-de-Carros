@@ -1,0 +1,9 @@
+create database aluguel;
+
+CREATE TABLE carros (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  marca VARCHAR(10) NOT NULL,
+  modelo VARCHAR(10) NOT NULL,
+  placa VARCHAR(7) NOT NULL,
+  alugado INT UNSIGNED NOT NULL DEFAULT 0
+);
